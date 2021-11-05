@@ -1,6 +1,6 @@
 <?php
 include("./inc/settings.php");
-validar;
+validar();
 
 $pdo = new PDO('mysql:host=localhost;dbname=' . $dbname, $username, $password);
 
@@ -16,6 +16,6 @@ if (isset($_POST['colum1'])) {
 }else{
   echo "Algo salio mal <a href='https://localhost/crud/crud.php'> clic aqui para volver al crud</a>" ;
 
-}
 
-?>
+
+
