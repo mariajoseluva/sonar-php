@@ -1,6 +1,7 @@
 <?php
 include("./inc/settings.php");
 validar();
+metodo();
 ?>
 <?php
 $pdo = new PDO('mysql:host=localhost;dbname=' . $dbname, $username, $password);
@@ -18,7 +19,7 @@ if (isset($_POST['colum1'])) {
 
 
 
-if ($stmt->rowCount() > 0) {
+if ($stmt->rowCount 0) {
   $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 ?>
