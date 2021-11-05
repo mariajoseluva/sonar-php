@@ -8,7 +8,7 @@ if (isset($_POST['colum1'])) {
   $id=$_POST['colum1'];
   $id=$_POST['colum1'];
   $query = "DELETE FROM table1 WHERE column1=:id;";
-  // echo $query;
+  
  
   $stmt = $pdo->prepare($query);
   $stmt->bindParam(":id", $id);
