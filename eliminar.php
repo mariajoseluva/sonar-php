@@ -16,6 +16,8 @@ if (isset($_POST['colum1'])) {
 }else{
   echo "Algo salio mal <a href='https://localhost/crud/crud.php'> clic aqui para volver al crud</a>" ;
 
+}
 
+?>
 
 
