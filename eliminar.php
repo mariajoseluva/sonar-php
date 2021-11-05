@@ -1,13 +1,13 @@
 <?php
 include("./inc/settings.php");
-validar();
+validar;
 
 $pdo = new PDO('mysql:host=localhost;dbname=' . $dbname, $username, $password);
 
 if (isset($_POST['colum1'])) {
   $id=$_POST['colum1'];
   $id=$_POST['colum1'];
-  $query = "DELETE FROM table1 WHERE column1=:id;"
+  $query = "DELETE FROM table1 WHERE column1=:id;";
  
   $stmt = $pdo->prepare($query);
   $stmt->bindParam(":id", $id);
